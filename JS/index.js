@@ -69,8 +69,14 @@ document.getElementById('btn-donate3').addEventListener('click', function () {
 // Donate and History Button
 document.getElementById('donate-history').addEventListener('click', function () {
     document.getElementById('main').classList.add("hidden");
-})
+    document.getElementById('donate-history').classList.add('py-4', 'px-8', 'rounded-lg', 'mr-4', 'bg-[#B4F461]');
+    document.getElementById('donate-money').classList.remove('bg-[#B4F461]');
+
+});
 
 document.getElementById('donate-money').addEventListener('click', function () {
     document.getElementById('main').classList.remove("hidden");
-})
+    document.getElementById('donate-money').classList.add('py-4', 'px-8', 'rounded-lg', 'mr-4', 'bg-[#B4F461]');
+    document.getElementById('donate-history').classList.remove('bg-[#B4F461]');
+
+});
