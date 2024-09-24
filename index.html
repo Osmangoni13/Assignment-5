@@ -28,34 +28,35 @@
 
 <body style="font-family: 'Lexend', sans-serif;">
     <section class="sm:sticky top-0 bg-white/50 backdrop-blur-md z-10 pb-2">
-        <header id="header" class="mx-auto bg-[#fcf3d8] w-full h-auto ">
+        <header id="header" class="mx-auto bg-[#faf5e7] w-full h-auto ">
             <div
                 class="container py-6 mx-auto pb-8 flex flex-col items-center justify-center gap-4 lg:flex-row lg:justify-between">
-                <!-- Navbar Start (Blog button) -->
+                <!-- Blog button -->
                 <div class="lg:navbar-start lg:mr-6">
                     <button class="bg-[#B4F461] text-xl font-semibold px-8 py-3 rounded-lg"><a
                             href="./blog.html">Blog</a></button>
                 </div>
 
-                <!-- Navbar Center (Logo and Text) -->
+                <!-- Bangladesh and logo-->
                 <div class="navbar-center flex flex-col items-center gap-2 lg:flex-row lg:gap-4 lg:ml-[360px]">
                     <img src="./assets/logo.png" alt="Donate Bangladesh Logo" class="w-10 h-10">
                     <p class="text-xl font-semibold">Donate Bangladesh</p>
                 </div>
 
-                <!-- Navbar End (Coin and Amount) -->
+                <!-- conin and take-->
                 <div class="navbar-end flex flex-col items-center gap-2 lg:flex-row lg:gap-3">
                     <img src="./assets/coin.png" alt="Coin" class="w-8 h-8">
-                    <p class="text-lg font-semibold"><span id="main-balance">700000</span>BDT</p>
+                    <p class="text-lg font-semibold"><span id="main-balance">10000</span> BDT</p>
                 </div>
             </div>
         </header>
 
 
-        <!-- Button -->
+        <!-- Donation and History Button -->
         <div class="container w-full h-auto mx-auto ">
             <div class="text-center mt-14 mb-8">
-                <buttton id="donate-money" class="py-4 px-8 border border-slate-300 rounded-lg mr-4 bg-[#B4F461]">
+                <buttton id="donate-money"
+                    class="py-4 px-8 border border-slate-300 hover:border-indigo-300 rounded-lg mr-4 bg-[#B4F461]">
                     Donation</buttton>
                 <buttton id="donate-history"
                     class="py-4 px-8 rounded-lg border border-slate-300 hover:border-indigo-300 divide-gray-200">
@@ -72,23 +73,17 @@
             <div class="container mx-auto p-6">
                 <!-- Donation card -->
                 <div class="bg-white rounded-lg  p-4 lg:flex border border-gray-200">
-                    <!-- Image Section -->
                     <div class="lg:w-1/2">
                         <img src="./assets/noakhali.png" alt=""
                             class="rounded-lg w-full object-cover h-[389px] lg:h-full">
                     </div>
-
-                    <!-- Donation details -->
                     <div class="lg:w-1/2 lg:pl-6 mt-4 lg:mt-0">
-                        <!-- Donation amount -->
                         <button
                             class="flex justify-center text-center gap-2 bg-gray-200 py-2 px-4 rounded-lg  border-gray-400">
                             <img src="./assets/coin.png" alt="">
-                            <p class="text-black"> <span id="amount1">200000</span> BDT</p>
+                            <p class="text-black"> <span id="amount1">5000</span> BDT</p>
                         </button>
                         <h2 class="text-xl text-black font-semibold mt-6">Donate for Flood at Noakhali, Bangladesh</h2>
-
-                        <!-- Donation description -->
                         <p class="text-black mt-4 font-light">
                             The recent floods in Feni have devastated local communities, leading to severe disruption
                             and loss.
@@ -106,7 +101,7 @@
                             <input id="input-donate1" type="text" placeholder="Write Donation Amount"
                                 class="input-donate w-full p-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:border-gray-400 mb-8" />
 
-                            <!-- Open the modal using ID.showModal() method -->
+                            <!--  modal -->
                             <button id="btn-donate1"
                                 class="btn-donate w-full mt-2 bg-[#B4F461] py-2 rounded-lg text-black"
                                 onclick="my_modal_1.showModal()">Donate Now</button>
@@ -123,7 +118,6 @@
                                         <h3 class="font-semibold ">Successfully</h3>
                                         <div class="modal-action text-center text-center flex justify-center flex-col">
                                             <form method="dialog">
-                                                <!-- if there is a button in form, it will close the modal -->
                                                 <button
                                                     class=" text-center bg-gray-200 py-2 px-3 rounded-lg text-black">Close
                                                     confirmation</button>
@@ -142,23 +136,18 @@
             <div class="container mx-auto p-6">
                 <!-- Donation card -->
                 <div class="bg-white rounded-lg  p-4 lg:flex md:flex border border-gray-200">
-                    <!-- Image Section -->
                     <div class="lg:w-1/2">
                         <img src="./assets/feni.png" alt="" class="rounded-lg w-full object-cover lg:max-h-[450px]">
                     </div>
-
-                    <!-- Donation details -->
                     <div class="lg:w-1/2 lg:pl-6 mt-4 lg:mt-0">
-                        <!-- Donation amount -->
                         <button
                             class="flex justify-center text-center gap-2 bg-gray-200 py-2 px-4 rounded-lg  border-gray-400">
                             <img src="./assets/coin.png" alt="">
-                            <p class="text-black"><span id="amount2">200000</span></p>
+                            <p class="text-black"><span id="amount2">2000</span></p>
                         </button>
                         <h2 class="text-xl text-black font-semibold mt-6">Donate for Flood Relief in Feni,Bangladesh
                         </h2>
 
-                        <!-- Donation description -->
                         <p class="text-black mt-4 font-light">
                             The recent floods in Feni have devastated local communities, leading to severe disruption
                             and loss. Your generous donation will help provide immediate aid, including food, clean
@@ -173,7 +162,6 @@
                             <input id="input-donate2" type="text" placeholder="Write Donation Amount"
                                 class="input-donate w-full p-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:border-gray-400 mb-8" />
 
-                            <!-- Open the modal using ID.showModal() method -->
                             <button id="btn-donate2"
                                 class="btn-donate w-full mt-2 bg-[#B4F461] py-2 rounded-lg text-black"
                                 onclick="my_modal_2.showModal()">Donate Now</button>
@@ -189,7 +177,6 @@
                                     <h3 class="font-semibold ">Successfully</h3>
                                     <div class="modal-action text-center text-center flex justify-center flex-col">
                                         <form method="dialog">
-                                            <!-- if there is a button in form, it will close the modal -->
                                             <button
                                                 class=" text-center bg-gray-200 py-2 px-3 rounded-lg text-black">Close
                                                 confirmation</button>
@@ -206,25 +193,20 @@
         <!-- 3rd card -->
         <section>
             <div class="container mx-auto p-6">
-                <!-- Donation card -->
                 <div class="bg-white rounded-lg  p-4 lg:flex border border-gray-200">
-                    <!-- Image Section -->
                     <div class="lg:w-1/2">
                         <img src="./assets/quota-protest.png" alt=""
                             class="rounded-lg w-full bg-cover lg:max-h-[472px] ">
                     </div>
 
-                    <!-- Donation details -->
                     <div class="lg:w-1/2 lg:pl-6 mt-4 lg:mt-0">
-                        <!-- Donation amount -->
                         <button
                             class="flex justify-center text-center gap-2 bg-gray-200 py-2 px-4 rounded-lg  border-gray-400">
                             <img src="./assets/coin.png" alt="">
-                            <p class="text-black"><span id="amount3">300000</span></p>
+                            <p class="text-black"><span id="amount3">3000</span></p>
                         </button>
                         <h2 class="text-xl text-black font-semibold mt-6">Aid for Injured in the Quota Movement</h2>
 
-                        <!-- Donation description -->
                         <p class="text-black mt-4 font-light">
                             The recent Quota movement has resulted in numerous injuries and significant hardship for
                             many individuals. Your support is crucial in providing medical assistance, rehabilitation,
@@ -239,7 +221,6 @@
                             <input id="input-donate3" type="text" placeholder="Write Donation Amount"
                                 class="input-donate w-full p-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:border-gray-400 mb-8" />
 
-                            <!-- Open the modal using ID.showModal() method -->
                             <button id="btn-donate3"
                                 class="btn-donate w-full mt-2 bg-[#B4F461] py-2 rounded-lg text-black"
                                 onclick="my_modal_3.showModal()">Donate Now</button>
@@ -255,7 +236,6 @@
                                     <h3 class="font-semibold ">Successfully</h3>
                                     <div class="modal-action text-center text-center flex justify-center flex-col">
                                         <form method="dialog">
-                                            <!-- if there is a button in form, it will close the modal -->
                                             <button
                                                 class=" text-center bg-gray-200 py-2 px-3 rounded-lg text-black">Close
                                                 confirmation</button>
@@ -268,13 +248,12 @@
                 </div>
             </div>
         </section>
-        <section>
-            <div class="history container mx-auto w-full h-auto">
-
-            </div>
-        </section>
-
     </main>
+    <!-- history secton -->
+    <section>
+        <div id="history" class="history hidden container mx-auto w-full h-auto">
+        </div>
+    </section>
     <script src="./JS/index.js"></script>
 </body>
 
