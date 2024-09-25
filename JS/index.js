@@ -98,7 +98,7 @@ document.getElementById('btn-donate3').addEventListener('click', function () {
         getTextValueById('amount3').innerText = inputDonateNow3;
         const remainTarget3 = mainBalance - inputDonate3;
         document.getElementById('main-balance').innerText = remainTarget3;
-        document.getElementById('input-donate2').value = '';
+        document.getElementById('input-donate3').value = '';
         document.getElementById('my_modal_3').showModal();
 
         // add history
